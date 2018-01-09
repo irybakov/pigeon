@@ -1,0 +1,36 @@
+# The directory Mix will write compiled artifacts to.
+/_build
+
+# If you run "mix test --cover", coverage assets end up here.
+/cover
+
+# The directory Mix downloads your dependencies sources to.
+/deps
+
+# Where 3rd-party dependencies like ExDoc output generated docs.
+/doc
+
+# Ignore .fetch files in case you like to edit your project deps locally.
+/.fetch
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
+
+# Release archives
+*.tar.gz
+
+# Certs
+/priv/apns
+/priv/ssl
+
+# ASN.1 DBs
+*.asn1db
+
+# ASN.1 compiled erlang sources
+src/APNS-Topics.erl
+
+# Apple... something
+.DS_Store

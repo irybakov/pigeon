@@ -82,6 +82,9 @@ defmodule Pigeon.GCM.Notification do
 
   def put_notification(n, notification), do: update_payload(n, "notification", notification)
 
+  def put_priority(n, :normal), do: update_payload(n, "android", %{"priority" => "normal"})
+  def put_priority(n, :high),   do: update_payload(n, "android", %{"priority"=> "high"})
+
   defp update_payload(notification, _key, value) when value == %{}, do: notification
   defp update_payload(notification, key, value) do
     payload =
